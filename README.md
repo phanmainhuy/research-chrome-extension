@@ -50,4 +50,4 @@ module.exports = nextConfig
 ```
 - Modify **package.json** scripts: **"build": "next build"**
 - Run cmd: **npm install --save-dev @types/chrome**
-- Run cmd: **npm run build && npx next export**
+- Run cmd: **npm run build**
