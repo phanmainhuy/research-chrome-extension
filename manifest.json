@@ -1,13 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Your Extension Name",
+  "name": "My Chrome Extension",
   "version": "1.0",
-  "description": "A Chrome extension made from Next.js",
+  "description": "A Chrome extension built using Next.js",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "action": {
     "default_popup": "index.html",
-    "default_icon": "icon.png"
+    "default_icon": "icons/icon48.png"
   },
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": ["storage", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
