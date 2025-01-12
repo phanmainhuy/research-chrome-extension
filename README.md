@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Add build for Chrome Extension
+- Add **manifest.json** file
+- Modify **next.config.ts** like below: 
+```
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  distDir: "dist",  // Custom output directory for the build
+};
+
+module.exports = nextConfig
+```
+- Modify **package.json** scripts: **"build": "next build"**
+- Run cmd: **npm install --save-dev @types/chrome**
+- Run cmd: **npm run build && npx next export**
