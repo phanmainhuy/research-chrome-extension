@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "My Chrome Extension",
+  "name": "Y Test Chrome Extension (NextJS)",
   "version": "1.0",
   "description": "A Chrome extension built using Next.js",
   "icons": {
